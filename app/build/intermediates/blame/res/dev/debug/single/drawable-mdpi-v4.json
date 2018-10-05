@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "/home/softman009/.android/build-cache/be4821479bb641a058fa56c23e54f6e0513f8a32/output/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/powered_by_google_light.png",
+        "source": "/home/softman009/.android/build-cache/f72b09d52c286f09753b73762d0f3491d2dff3b1/output/res/drawable-mdpi-v4/powered_by_google_light.png"
+    },
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "/home/softman009/.android/build-cache/be4821479bb641a058fa56c23e54f6e0513f8a32/output/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/places_ic_search.png",
+        "source": "/home/softman009/.android/build-cache/f72b09d52c286f09753b73762d0f3491d2dff3b1/output/res/drawable-mdpi-v4/places_ic_search.png"
+    },
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/places_ic_clear.png",
+        "source": "/home/softman009/.android/build-cache/f72b09d52c286f09753b73762d0f3491d2dff3b1/output/res/drawable-mdpi-v4/places_ic_clear.png"
+    },
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/googleg_standard_color_18.png",
+        "source": "/home/softman009/.android/build-cache/be4821479bb641a058fa56c23e54f6e0513f8a32/output/res/drawable-mdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/googleg_disabled_color_18.png",
+        "source": "/home/softman009/.android/build-cache/be4821479bb641a058fa56c23e54f6e0513f8a32/output/res/drawable-mdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/powered_by_google_dark.png",
+        "source": "/home/softman009/.android/build-cache/f72b09d52c286f09753b73762d0f3491d2dff3b1/output/res/drawable-mdpi-v4/powered_by_google_dark.png"
+    },
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "/home/softman009/.android/build-cache/be4821479bb641a058fa56c23e54f6e0513f8a32/output/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/softman009/Documents/workspace/MbaasLibrary/app/build/intermediates/res/merged/dev/debug/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "/home/softman009/.android/build-cache/be4821479bb641a058fa56c23e54f6e0513f8a32/output/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    }
+]

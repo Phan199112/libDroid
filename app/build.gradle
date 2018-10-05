@@ -1,0 +1,81 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        dev {
+            versionName defaultConfig.versionName
+            versionCode Integer.parseInt(project.VERSION_CODE)
+        }
+
+        production {
+            versionName defaultConfig.versionName
+            versionCode Integer.parseInt(project.VERSION_CODE)
+        }
+    }
+}
+
+android.libraryVariants.all { variant ->
+    variant.outputs.each { output ->
+        def outputFile = output.outputFile
+        if (outputFile != null && outputFile.name.contains("dev")) {
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    output.outputFile.name.replace("app-dev-debug.aar", "mbaasLibrary-dev-${android.defaultConfig.versionName}" + ".aar"))
+        } else {
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    output.outputFile.name.replace("app-production-debug.aar", "mbaasLibrary-prod-${android.defaultConfig.versionName}" + ".aar"))
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.firebase:firebase-core:10.2.4'
+    compile 'com.pkmmte.view:circularimageview:1.1'
+    compile 'com.android.support:recyclerview-v7:22.0.0'
+    compile 'com.google.android.gms:play-services-maps:10.2.6'
+    compile 'com.google.android.gms:play-services-location:10.2.6'
+    compile 'com.google.android.gms:play-services-places:10.2.6'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'commons-io:commons-io:2.4'
+    compile files('libs/khandroid-httpclient-4.2.3.jar')
+}
+
+//Build for the dev version of the mbaaslibrary
+//Run this command before Making the AAR file
+//gradle -q copyDevProperties
+task copyDevProperties(type: Copy) {
+    from('src/main/assets/properties/dev.properties')
+    into('src/main/assets/')
+    include('dev.properties')
+    rename ('dev.properties', 'project.properties')
+    println "[INFO] File dev.properties Copied and renamed"
+}
+
+//build for the production version of the mbaaslibrary
+//Run this command before Making the AAR file
+//gradle -q copyProductionProperties
+task copyProductionProperties(type: Copy) {
+    from('src/main/assets/properties/production.properties')
+    into('src/main/assets/')
+    include('production.properties')
+    rename ('production.properties', 'project.properties')
+    println "[INFO] File production.properties Copied and renamed"
+}

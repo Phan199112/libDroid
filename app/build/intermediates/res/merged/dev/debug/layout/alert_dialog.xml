@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/alert_dialog_border">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/dark_grey"
+    android:padding="10dip">
+
+    <!-- layout title -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:background="@color/dark_grey">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_dialog_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_dialog_info"
+                android:layout_alignParentEnd="false"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/txt_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@android:color/white"
+                android:text="Title"
+                android:paddingLeft="5dp"
+                android:layout_toEndOf="@+id/img_dialog_icon"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/red"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:autoLink="web"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:text="Content"
+            android:layout_alignParentStart="true"
+            android:background="@color/dark_grey" />
+
+    <LinearLayout
+        android:id="@+id/layout_dialog_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/dark_grey">
+
+        <ImageButton
+            android:id="@+id/btn_ok"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/okbutton"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
